@@ -1,0 +1,64 @@
+ <h2 class="page-header">My Profile</h2>
+<p></p>  
+<div class="row">
+    <div class="col-sm-4">
+        
+   
+    <br>
+
+    <hr>
+
+</div>
+
+<br>
+
+<div class="row">
+
+    <div class="col-sm-8">
+
+        
+
+        <table class="table">
+
+            <thead>
+            <tr>
+                
+                <th>Name</th>
+                <th>Username</th>
+                <th>Email</th>
+                
+                
+            </tr>
+            </thead>
+            <tbody>
+
+            {{#each user }}
+                <tr>
+                    <td>{{name}}</td>
+                    <td>{{username}}</td>
+                    <td>{{email}}</td>               
+                   
+                    
+
+                </tr>
+
+            {{/each}}
+
+
+            </tbody>
+
+
+
+
+        </table>
+
+
+
+    </div>
+
+</div>
+
+<div clas='row'>
+<a href="/users/edit/{{user.id}}">Edit Your Profile</a>
+
+</div>
